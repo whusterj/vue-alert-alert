@@ -2,11 +2,11 @@
   "name": "vue-alert-alert",
   "version": "1.0.0",
   "description": "A minimalist alert plugin for VueJS projects.",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "style": "dist/alert-alert.css",
   "scripts": {
-    "test": "",
-    "build": ""
+    "build": "webpack --config ./build/webpack.base.config.js --progress --hide-modules",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,21 @@
   "bugs": {
     "url": "https://github.com/whusterj/vue-alert-alert/issues"
   },
-  "homepage": "https://github.com/whusterj/vue-alert-alert/"
+  "homepage": "https://github.com/whusterj/vue-alert-alert/",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.9",
+    "uglifyjs-webpack-plugin": "^1.1.8",
+    "vue": "^2.5.13",
+    "vue-loader": "^14.1.1",
+    "vue-template-compiler": "^2.5.13",
+    "webpack": "^3.10.0"
+  },
+  "peerDependencies": {
+    "vue": "^2.5.13"
+  }
 }

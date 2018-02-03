@@ -8,11 +8,10 @@ const store = {
 export default store
 
 export function addAlert (opts = {}) {
-  console.log('addAlert.store:', store)
-
-  const newAlert = Alert.create(
-    Object.assign({ id: store.nextAlertID }, opts)
-  )
+  const newAlert = Alert.create({
+    id: store.nextAlertID,
+    ...opts
+  })
   store.alerts.unshift(newAlert)
 
   if (newAlert.timeout) {
@@ -25,6 +24,7 @@ export function addAlert (opts = {}) {
 }
 
 export function removeAlert (alert) {
-  Vue.delete(store.alerts, store.alerts.indexOf(alert))
+  const index = store.alerts.indexOf(alert)
+  store.alerts.splice(index, 1)
 }
 

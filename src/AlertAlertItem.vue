@@ -1,9 +1,10 @@
 <template>
-  <div class="aa-notification {{ alert.type }}"
-      @click="$emit('remove', alert)"
-  >
-    {{ alert.id }} {{ alert.message }}
-  </div>
+  <div
+    class="aa-notification"
+    :class="alert.type"
+    @click="$emit('remove', alert)"
+    v-html="alert.message"
+  ></div>
 </template>
 
 <script>

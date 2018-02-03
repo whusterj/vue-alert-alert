@@ -8,17 +8,17 @@
         @remove="handleRemove"
       >
       </alert-alert-item>
-    </transition-group>    
+    </transition-group>
   </div>
 </template>
 
 <script>
-import store from './store'
+import store, { removeAlert } from './store'
 import Alert from './alerts'
-import AlertAlertItem from './AlertAlertItem'
+import AlertAlertItem from './AlertAlertItem.vue'
 
 export default {
-  name: 'AlertAlert'
+  name: 'AlertAlert',
   data () {
     return {
       alert: Alert.create({

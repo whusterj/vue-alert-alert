@@ -4,11 +4,11 @@ const Alert = {
   message: 'No message',
   timeout: null,
   create (opts = {}) {
-    return Object.assign(
-      Object.create(Alert),
-      opts
-    )
-  }
+    return {
+      ...Alert,
+      ...opts
+    }
+  },
 }
 
 export default Alert
