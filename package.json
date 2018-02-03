@@ -1,0 +1,28 @@
+{
+  "name": "vue-alert-alert",
+  "version": "1.0.0",
+  "description": "A minimalist alert plugin for VueJS projects.",
+  "main": "src/index.js",
+  "style": "dist/alert-alert.css",
+  "scripts": {
+    "test": "",
+    "build": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whusterj/vue-alert-alert.git"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "alerts",
+    "notifications",
+    "vue-alert-alert"
+  ],
+  "author": "William Huster <whusterj@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/whusterj/vue-alert-alert/issues"
+  },
+  "homepage": "https://github.com/whusterj/vue-alert-alert/"
+}
