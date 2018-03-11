@@ -1,6 +1,6 @@
 {
   "name": "vue-alert-alert",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A minimalist alert plugin for VueJS projects.",
   "main": "dist/index.js",
   "style": "dist/alert-alert.css",
