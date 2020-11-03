@@ -16,6 +16,17 @@ import AlertAlert from 'vue-alert-alert'
 Vue.use(AlertAlert)
 ```
 
+Add the `<alert-alert>` component to the root of your app (ex: App.vue):
+
+```html
+<template>
+  <div id="app">
+    <alert-alert />
+    <router-view v-show="!globalLoading" :key="$route.fullPath" />
+  </div>
+</template>
+```
+
 Use the plugin
 
 ```javascript
