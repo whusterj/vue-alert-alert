@@ -1,5 +1,11 @@
 # 🚨 Alert! Alert! for VueJS
 
+> **Status: frozen.** The last release was in 2020, and this package is deprecated on npm. Nobody maintains it, and it will get no more updates.
+>
+> The plugin works only with Vue 2 (`peerDependencies: vue ^2.5.13`), and Vue 2 reached its end of life on 31 December 2023. It does not work with Vue 3.
+>
+> The plugin ships no runtime dependencies, so an install adds no vulnerable code to your project. The build tooling in `devDependencies` does have known vulnerabilities, which matter only if you build the plugin yourself.
+
 A minimalist alert plugin for VueJS projects.
 
 Install from npm:
